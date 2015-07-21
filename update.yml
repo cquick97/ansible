@@ -1,0 +1,10 @@
+---
+- hosts: all
+  sudo: true
+  tasks:
+   - name: Updating apt cache...
+     apt: update_cache=yes
+   - name: Upgrading packages...
+     apt: upgrade=full
+     async: 60
+     poll: 60

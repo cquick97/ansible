@@ -1,0 +1,9 @@
+---
+- hosts: all
+  
+  tasks:
+   - name: Updating apt cache...
+     apt: update_cache=yes
+
+   - name: Installing htop...
+     apt: name=htop state=present
