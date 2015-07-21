@@ -7,4 +7,4 @@
    - name: Upgrading packages...
      apt: upgrade=full
      async: 60
-     poll: 60
+     poll: 5
